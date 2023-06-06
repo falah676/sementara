@@ -1,0 +1,394 @@
+:root {
+    --color-primary: #feb900;
+    --color-secondary: #364d59;
+    --color-greey: #52565e
+}
+
+.header {
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+}
+
+#home {
+    padding: 0;
+}
+
+.low-bright {
+    filter: brightness(0.3);
+}
+
+.text-yellow {
+    color: var(--color-primary);
+}
+
+.navbar-top::after {
+    content: "";
+    display: block;
+    background-color: var(--color-primary);
+    height: 2px;
+    width: 0%;
+    transition: 0.5s;
+}
+
+.navbar-top:hover:after {
+    width: 100%;
+}
+
+.navbar-top a {
+    color: rgb(196, 196, 196);
+}
+
+.navbar-top a:hover {
+    color: white;
+}
+
+.active-top {
+    color: white !important;
+}
+
+.active-top.active .navbar-top::after {
+    width: 100%;
+}
+
+.content-home {
+    /* Cara center div */
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.title-home h1 {
+    font-size: 50px;
+}
+
+.title-home::after {
+    content: "";
+    display: block;
+    background-color: var(--color-primary);
+    height: 4px;
+    width: 10%;
+    margin: auto;
+    border-radius: 20px;
+}
+
+.desc-home p {
+    font-size: 18px;
+    word-spacing: 2px;
+}
+
+.btn.button-content {
+    padding: 12px 40px !important;
+    border-radius: 50px !important;
+    /* background-color: var(--color-primary) !important; */
+}
+
+.button-content:hover {
+    background-color: var(--color-primary) !important;
+
+}
+
+/*
+.active::after {
+    content: "";
+    display: block;
+    background-color: var(--color-primary);
+    height: 2px;
+    width: 100%;
+    transition: 0.5s;
+} */
+
+/* About section */
+#about,
+#service {
+    background-color: #fdf5f5;
+}
+
+section {
+    padding: 80px 0;
+}
+
+/* right side */
+.title-right-side {
+    color: var(--color-greey);
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.title-right-side::after {
+    content: "";
+    display: block;
+    background-color: var(--color-primary);
+    height: 4px;
+    width: 70px;
+    margin-top: 20px;
+}
+
+/* Form side */
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* .title {
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+} */
+
+.card {
+    width: 100%;
+}
+
+.form-title {
+    margin-left: 5px;
+    font-size: 14px;
+    color: var(--color-secondary);
+}
+
+.form-content {
+    margin-left: 5px;
+    color: var(--color-secondary);
+}
+
+.form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.group {
+    position: relative;
+}
+
+.form .group label {
+    font-size: 14px;
+    color: rgb(99, 102, 102);
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    background-color: #fff;
+    transition: all .3s ease;
+}
+
+.form .group input,
+.form .group textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    outline: 0;
+    width: 100%;
+    background-color: transparent;
+}
+
+.form .group input:placeholder-shown+label,
+.form .group textarea:placeholder-shown+label {
+    top: 10px;
+    background-color: transparent;
+}
+
+.form .group input:focus,
+.form .group textarea:focus {
+    border-color: rgb(255, 193, 7);
+}
+
+.form .group input:focus+label,
+.form .group textarea:focus+label {
+    top: -10px;
+    left: 10px;
+    background-color: #fff;
+    color: rgb(255, 193, 7);
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.form .group textarea {
+    resize: none;
+    height: 100px;
+}
+
+.form button {
+    background-color: rgb(255, 193, 7);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.form button:hover {
+    background-color: rgb(203, 153, 3);
+}
+
+/*Section Construction */
+.title-construction::before {
+    content: "";
+    display: inline-block;
+    width: 70px;
+    height: 2px;
+    background-color: var(--color-primary);
+    position: relative;
+    bottom: 10px;
+    right: 10px;
+
+}
+
+.title-construction::after {
+    content: "";
+    display: inline-block;
+    width: 70px;
+    height: 2px;
+    background-color: var(--color-primary);
+    position: relative;
+    bottom: 10px;
+    left: 10px;
+
+}
+
+
+.card-content {
+    width: 600px;
+    border: #dde2ea solid;
+}
+
+.image-card {
+    width: 230px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.title-card {
+    font-size: 20px;
+}
+
+
+
+
+/* Section Service */
+.card-service {
+    width: 400px;
+    height: 400px;
+    text-decoration: none;
+    color: var(--color-secondary);
+}
+
+.icon-card::before {
+    content: "";
+    display: inline-block;
+    width: 55px;
+    height: 55px;
+    background-color: #58707e52;
+    border-radius: 100%;
+    position: absolute;
+    margin-left: 15px;
+    margin-top: -5px;
+    transition: .3s;
+}
+
+.title-service {
+    width: fit-content;
+}
+
+.title-service::after {
+    content: "";
+    background-color: #58707e52;
+    display: block;
+    width: 100%;
+    height: 5px;
+    border-radius: 10px;
+    margin-top: 20px;
+    transition: .3s;
+}
+
+.icon-card i {
+    font-size: 45px;
+    font-weight: 600;
+    color: var(--color-greey);
+    position: relative;
+    z-index: 1;
+
+}
+
+.text-learn {
+    color: var(--color-primary);
+    font-size: 14px;
+}
+
+.card-service:hover .icon-card::before {
+    background-color: rgb(255, 183, 0) !important;
+}
+
+.card-service:hover .title-service::after {
+    background-color: rgb(255, 183, 0) !important;
+}
+
+.card-service:hover {
+    color: var(--color-secondary);
+}
+
+/* Section Service Tab */
+
+.btn-tab {
+    border: none;
+    border-radius: 0 !important;
+}
+
+/* .btn-link {
+    color: var(--color-text) !important;
+    font-weight: 600 !important;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    font-size: 18px !important;
+    transition: .3s;
+} */
+
+.btn-link {
+    color: var(--color-greey) !important;
+    width: 100%;
+    font-weight: bold !important;
+    font-size: 19px !important;
+}
+
+.btn-link:hover {
+    color: #feb900 !important;
+}
+
+.btn-link::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: #7892a152;
+    margin-top: 10px;
+    transition: .3s;
+}
+
+.btn-link.active.btn-link::after {
+    background-color: var(--color-primary);
+}
+
+.desc-feature {
+    font-size: 19px;
+    color: var(--color-greey);
+    font-style: italic;
+}
+
+.list-feature {
+    list-style: none;
+    color: var(--color-greey);
+    font-size: 18px;
+}
+
+.list-feature li {
+    margin-bottom: 20px;
+}
